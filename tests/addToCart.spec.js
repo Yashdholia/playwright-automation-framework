@@ -1,7 +1,7 @@
-import { test, expect } from "@playwright/test";
-import { LoginPage } from "../pages/LoginPage";
-import { InventoryPage } from "../pages/InventoryPage";
-import { users } from "../utils/testData";
+const { test, expect } = require("@playwright/test");
+const { LoginPage } = require("../pages/LoginPage");
+const { InventoryPage } = require("../pages/InventoryPage");
+const { users } = require("../utils/testData");
 
 test("Add to Cart Test", async ({ page }) => {
   const login = new LoginPage(page);
